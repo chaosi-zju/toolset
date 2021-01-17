@@ -39,6 +39,7 @@ type User struct {
 	Email    string `gorm:"column:email"`
 	Phone    string `gorm:"column:phone"`
 	Password string `gorm:"column:password"`
+	Role     string `gorm:"role"`
 }
 
 var (
