@@ -59,7 +59,7 @@ func init() {
 		panic("open file error: " + err.Error())
 	}
 
-	dsn := "root:ssbb@tcp(127.0.0.1:3306)/daily_problem?charset=utf8mb4&parseTime=True"
+	dsn := "root:123456@tcp(127.0.0.1:3306)/daily_problem?charset=utf8mb4&parseTime=True"
 	if conn, err := gorm.Open(mysql.New(mysql.Config{DSN: dsn}), &gorm.Config{}); err == nil {
 		Db = conn
 	} else {
